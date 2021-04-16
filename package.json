@@ -1,0 +1,22 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/selenium-standalone-service": "^7.4.2",
+    "codeceptjs": "^3.0.6",
+    "webdriverio": "^6.12.1"
+  },
+  "dependencies": {
+    "@wdio/cli": "^7.0.0",
+    "faker": "^5.5.1",
+    "webdriver-manager": "^12.1.8"
+  }
+}
