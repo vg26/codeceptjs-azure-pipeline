@@ -1,0 +1,20 @@
+
+
+trigger:
+- none
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- script: echo CodeceptJS demo project
+- task: NodeTool@0
+  inputs:
+    versionSpec: '12.x'
+  displayName: 'Installing Node.js'
+
+- script: |
+    echo Running tests
+    npx codeceptjs run --steps
+    
+
