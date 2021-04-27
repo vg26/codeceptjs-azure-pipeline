@@ -3,8 +3,9 @@ exports.config = {
   output: './output',
   helpers: {
     WebDriver: {
-      url: 'https://demoqa.com',
-      browser: 'chrome'
+      url: 'http://automationpractice.com',
+      browser: 'chrome',
+      "restart": false
       
    
     }
