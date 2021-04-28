@@ -8,6 +8,7 @@ pool: default
 steps:
 - script: |
     displayName: 'CodeceptJS Demo Project'
+    echo CodeceptJS Demo Project
 - task: NodeTool@0
   inputs:
     versionSpec: '12.x'
