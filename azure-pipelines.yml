@@ -6,14 +6,14 @@ trigger:
 pool: default
 
 steps:
-- script: echo CodeceptJS demo project
+- script: displayName: 'CodeceptJS Demo Project'
 - task: NodeTool@0
   inputs:
     versionSpec: '12.x'
   displayName: 'Installing Node.js'
 
 - script: |
-    echo Running tests
+    displayName: 'Running Tests'
     npx codeceptjs run --steps
     
 
