@@ -4,7 +4,7 @@ trigger:
 - none
 
 pool:
-  vmImage: windows-latest
+  vmImage: default
 
 steps:
 - script: echo CodeceptJS demo project
