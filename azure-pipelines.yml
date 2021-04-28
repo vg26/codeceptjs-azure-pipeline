@@ -12,8 +12,8 @@ steps:
     versionSpec: '12.x'
   displayName: 'Installing Node.js'
 
-- script: 
+- script: "npx codeceptjs run --steps"
   displayName: 'Running Tests'
-  "npx codeceptjs run --steps"
+  
     
 
