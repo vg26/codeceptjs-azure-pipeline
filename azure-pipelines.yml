@@ -21,7 +21,7 @@ steps:
   
 - task: PublishHtmlReport@1
   inputs:
-     reportDir: 'output/report.html'
+     reportDir: 'output/simple.html'
   displayName: 'Publish HTML Report'
   
     
