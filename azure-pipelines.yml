@@ -7,6 +7,10 @@ pool: default
 
 steps:
 
+- script: "npm i"
+  displayName: 'Installing dependencies'
+
+
 - task: NodeTool@0
   inputs:
     versionSpec: '12.x'
