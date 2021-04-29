@@ -14,7 +14,34 @@ exports.config = {
     I: './steps_file.js'
   },
   bootstrap: null,
-  mocha: {},
+
+    "mocha": {
+    "reporterOptions": {
+      "codeceptjs-cli-reporter": {
+        "stdout": "-",
+        "options": {
+          "verbose": true,
+          "steps": true,
+        }
+      },
+      "mochawesome": {
+       "stdout": "./output/console.log",
+       "options": {
+         "reportDir": "./output",
+         "reportFilename": "report"
+      },
+      "mocha-junit-reporter": {
+        "stdout": "./output/console.log",
+        "options": {
+          "mochaFile": "./output/result.xml",
+          "attachments": true //add screenshot for a failed test
+        }
+      }
+    }
+  }
+},
+  
+  
   name: 'test1',
   plugins: {
     pauseOnFail: {},
@@ -31,5 +58,7 @@ exports.config = {
       enabled: true,
       services: ['selenium-standalone']
   }
+,
+  
 }
 }

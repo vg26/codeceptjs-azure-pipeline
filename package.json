@@ -12,11 +12,14 @@
   "devDependencies": {
     "@wdio/selenium-standalone-service": "^7.4.2",
     "codeceptjs": "^3.0.6",
+    "mocha": "^8.3.2",
+    "mocha-multi": "^1.1.3",
     "webdriverio": "^6.12.1"
   },
   "dependencies": {
     "@wdio/cli": "^7.0.0",
     "faker": "^5.5.1",
+    "mochawesome": "^6.2.2",
     "webdriver-manager": "^12.1.8"
   }
 }
