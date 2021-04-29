@@ -21,7 +21,7 @@ steps:
   
 - task: PublishHtmlReport@1
   inputs:
-     reportDir: 'output/simple.html'
+     reportDir: '"C:\Users\vladimir.gulabovski\Downloads\new.html"'
   displayName: 'Publish HTML Report'
   
     
