@@ -19,5 +19,10 @@ steps:
 - script: "npx codeceptjs run --reporter mocha-multi"
   displayName: 'Running Tests'
   
+ - task: PublishHtmlReport@1
+    displayName: 'Publish HTML Report'
+    inputs:
+      reportDir: 'C:\agent\_work\1\s\output\report.html'
+  
     
 
