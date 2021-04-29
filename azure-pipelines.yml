@@ -22,7 +22,7 @@ steps:
 - task: publishhtmlreport@1
   inputs:
      htmlType: 'genericHTML'
-     reportDir: 'output/report.html'
+     htmlPath: 'output/report.html'
   displayName: 'Publish HTML Report'
   
     
