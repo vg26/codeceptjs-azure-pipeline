@@ -22,7 +22,7 @@ steps:
 - task: publishhtmlreport@1
   inputs:
      htmlType: 'genericHTML'
-     htmlPath: 'output/report.html'
+     htmlPath: 'C:\agent\_work\1\s\output\report.html'
   displayName: 'Publish HTML Report'
   
     
