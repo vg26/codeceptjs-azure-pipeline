@@ -21,7 +21,7 @@ steps:
   
 - task: PublishHtmlReport@1
   inputs:
-     reportDir: 'C:\agent\_work\1\s\output\report.html'
+     reportDir: 'report.html'
   displayName: 'Publish HTML Report'
   
     
