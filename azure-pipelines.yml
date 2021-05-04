@@ -20,10 +20,10 @@ steps:
   displayName: 'Running Tests'
   
 
-- task: PublishHtmlReport@1
-  displayName: 'Publish HTML Report'
+- task: publishhtmlreport@1
   inputs:
-      reportDir: 'output/report.html'
+    htmlType: 'genericHTML'
+    htmlPath: 'output/report.html'
   
     
 
