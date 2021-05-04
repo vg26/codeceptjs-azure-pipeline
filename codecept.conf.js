@@ -15,6 +15,12 @@ exports.config = {
   },
   bootstrap: null,
 
+  "mocha": {
+    "reporterOptions": {
+        "mochaFile": "output/result.xml"
+    }
+  },
+
     "mocha": {
     "reporterOptions": {
       "codeceptjs-cli-reporter": {
