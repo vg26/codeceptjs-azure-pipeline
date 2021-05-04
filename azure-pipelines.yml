@@ -16,7 +16,7 @@ steps:
     versionSpec: '12.x'
   displayName: 'Installing Node.js'
 
-- script: "npx codeceptjs run --plugins allure --steps"
+- script: "npx codeceptjs run --reporter mocha-multi"
   displayName: 'Running Tests'
   
 - task: PublishTestResults@2
