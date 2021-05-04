@@ -16,7 +16,7 @@ steps:
     versionSpec: '12.x'
   displayName: 'Installing Node.js'
 
-- script: "npx codeceptjs run --reporter mocha-multi"
+- script: "npx codeceptjs run --reporter mocha-junit-reporter"
   displayName: 'Running Tests'
   
     
