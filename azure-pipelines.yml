@@ -22,7 +22,7 @@ steps:
 
 - task: publishhtmlreport@1
   inputs:
-    htmlType: 'Html'
+    htmlType: 'Cobertura'
     htmlPath: 'C:\agent\_work\1\s\output\report.html'
   
     
