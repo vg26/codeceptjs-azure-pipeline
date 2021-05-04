@@ -20,11 +20,12 @@ steps:
   displayName: 'Running Tests'
   
     
-- task: PublishHtmlReport@1
-  displayName: 'Publish HTML Report'
+- task: PublishTestResults@2
+  displayName: Publish CodeceptJS test results
   inputs:
-      htmlType: 'Html'
-      reportDir: 'C:\agent\_work\1\s\output\report.html'
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'output/result.xml'
+    testRunTitle: 'End to end'
   
     
 
