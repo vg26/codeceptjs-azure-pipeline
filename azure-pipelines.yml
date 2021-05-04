@@ -16,13 +16,15 @@ steps:
     versionSpec: '12.x'
   displayName: 'Installing Node.js'
 
-- script: "npx codeceptjs run"
+- script: "npx codeceptjs run --plugins allure --steps"
   displayName: 'Running Tests'
   
-- task: publishhtmlreport@1
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results'
   inputs:
-    htmlType: 'genericHTML'
-    htmlPath: 'output/Sample.html' 
+    testResultsFiles: 'output/*.xml'
+    mergeTestResults: true
+    failTaskOnFailedTests: true 
   
     
 
