@@ -19,12 +19,10 @@ steps:
 - script: "npx codeceptjs run"
   displayName: 'Running Tests'
   
-- task: PublishTestResults@2
-  displayName: 'Publish Test Results'
+- task: publishhtmlreport@1
   inputs:
-    testResultsFiles: 'output/*.xml'
-    mergeTestResults: true
-    failTaskOnFailedTests: true    
+    htmlType: 'genericHTML'
+    htmlPath: 'output/Sample.html' 
   
     
 
