@@ -24,7 +24,7 @@ steps:
   displayName: Publish CodeceptJS test results
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'output/result.xml'
+    testResultsFiles: 'C:\agent\_work\1\s\test-results.xml'
     testRunTitle: 'End to end'
   
     
